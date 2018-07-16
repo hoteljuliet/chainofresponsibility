@@ -38,12 +38,6 @@ public class Flow {
         // in forward order, call the execute method
         for (Chain chain : chains) {
             processingComplete = chain.execute(context);
-            if (processingComplete) {
-                break;
-            }
-            else {
-                ;
-            }
         }
 
         return processingComplete;
