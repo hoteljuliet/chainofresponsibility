@@ -1,4 +1,4 @@
-package java.org.hoteljuliet.common.core;
+package org.hoteljuliet.common.core;
 
 public interface Command {
     /**

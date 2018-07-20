@@ -1,7 +1,7 @@
-package java.org.hoteljuliet.common.core;
+package org.hoteljuliet.common.core;
 
-import java.org.hoteljuliet.common.exception.CoRException;
-import java.org.hoteljuliet.common.exception.CoRExceptionType;
+import org.hoteljuliet.common.exception.CoRException;
+import org.hoteljuliet.common.exception.CoRExceptionType;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

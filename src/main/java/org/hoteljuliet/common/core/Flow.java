@@ -1,4 +1,4 @@
-package java.org.hoteljuliet.common.core;
+package org.hoteljuliet.common.core;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +38,10 @@ public class Flow {
         // in forward order, call the execute method
         for (Chain chain : chains) {
             processingComplete = chain.execute(context);
+
+            if (!processingComplete) {
+                throw new IllegalStateException("The Chain \"" + chain.getName() + "\" ended but did not completely process the context");
+            }
         }
 
         return processingComplete;

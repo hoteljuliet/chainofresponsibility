@@ -1,4 +1,4 @@
-package java.org.hoteljuliet.common.core;
+package org.hoteljuliet.common.core;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,7 @@ import java.util.ListIterator;
 public class Chain {
 
     private List<Command> commands;
+    private String name;
 
     /**
      *
@@ -56,5 +57,19 @@ public class Chain {
         return processingComplete;
     }
 
+    public List<Command> getCommands() {
+        return commands;
+    }
 
+    public void setCommands(List<Command> commands) {
+        this.commands = commands;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

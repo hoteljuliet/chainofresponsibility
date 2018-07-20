@@ -1,4 +1,4 @@
-package java.org.hoteljuliet.common.exception;
+package org.hoteljuliet.common.exception;
 
 public class CoRException extends Exception {
 
